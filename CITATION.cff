@@ -14,6 +14,14 @@ type: software
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/Xu-913/industrial-defect-data-efficiency"
+doi: "10.5281/zenodo.22833116"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22833116"
+    description: "Archived artifact, version v1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.22833115"
+    description: "Concept DOI covering all versions"
 keywords:
   - industrial defect classification
   - data efficiency
