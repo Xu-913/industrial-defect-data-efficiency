@@ -148,19 +148,25 @@ and the AMP dtype actually used, so the provenance of every number is self-descr
 
 ## 7. Citation
 
-If you use these results, please cite the paper. A machine-readable record is in
-`CITATION.cff`.
+If you use these results, please cite the paper and the archived artifact. A
+machine-readable record is in `CITATION.cff`.
+
+The artifact is archived on Zenodo:
+
+- **Version DOI (v1.0.0):** [10.5281/zenodo.22833116](https://doi.org/10.5281/zenodo.22833116)
+- **Concept DOI (all versions):** [10.5281/zenodo.22833115](https://doi.org/10.5281/zenodo.22833115)
 
 ```bibtex
 @article{xu2026classlevel,
   title   = {Class-level data efficiency in industrial defect classification:
-             a four-dataset audit, a dynamic-range confound, and
-             annotation-budget allocation},
-  author  = {Xu, Xiang and Nie, Mincan and Liu, Yiwen and Li, Xinxin and
-             Sun, Yihui and Hu, Wei and Gong, Zhi},
+             a measurement protocol, a difficulty map, and
+             annotation-budget decision tables},
+  author  = {Xu, Xiang and Nie, Mincan and Liu, Yiwen and Li, Xianxin and
+             Sun, Yihui and Zhan, Zhu and Hu, Wei and Liu, Jun and
+             Gong, Zhi and Su, Haibin},
   journal = {Engineering Applications of Artificial Intelligence},
   year    = {2026},
-  note    = {Data and code: \url{https://github.com/Xu-913/industrial-defect-data-efficiency}}
+  doi     = {10.5281/zenodo.22833116}
 }
 ```
 
