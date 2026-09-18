@@ -1,0 +1,70 @@
+==========================================================================
+neu_cls  <- /var/hpc-root/xiangxu/work/NEU-CLS
+  note: derived from NEU-DET images; SAME 1800 images as neu_surface - do not use both.
+  kept 1799, dropped 1
+    drop patches_105.jpg (dup-of:patches/patches_101.jpg)
+  6 classes:
+    rolled-in_scale          300
+    pitted_surface           300
+    crazing                  300
+    scratches                300
+    inclusion                300
+    patches                  299
+  imbalance = 1.0x (max 300 / min 299)
+  wrote 5 splits
+==========================================================================
+gc10det  <- /var/hpc-root/HPC_SHARED_DIR/datasets/gc10det
+  note: 10 classes, 2048x1000 grayscale, imbalance 21x; dirs named 1..10.
+  kept 2312, dropped 0
+  10 classes:
+    6                        651
+    4                        289
+    2                        273
+    3                        226
+    1                        219
+    7                        216
+    5                        204
+    10                       150
+    9                        53
+    8                        31
+  imbalance = 21.0x (max 651 / min 31)
+  wrote 5 splits
+==========================================================================
+magnetic_tile  <- /var/hpc-root/HPC_SHARED_DIR/datasets/magnetic_tile/Surface-Defect-Detection-master/Magnetic-Tile-Defect
+  note: 6 MT_* classes; images live under MT_x/Imgs/, so class = parent of Imgs.
+  dropped tiny labels (<20 imgs): ['Magnetic-Tile-Defect']
+  kept 2611, dropped 77
+    drop exp1_num_261937.png (dup-of:MT_Free/Imgs/exp1_num_257103.png)
+    drop exp1_num_266790.png (dup-of:MT_Free/Imgs/exp1_num_260927.png)
+    drop exp1_num_320895.png (dup-of:MT_Free/Imgs/exp1_num_320808.png)
+    drop exp2_num_106169.png (dup-of:MT_Free/Imgs/exp1_num_282886.png)
+    drop exp2_num_180326.png (dup-of:MT_Free/Imgs/exp2_num_157736.png)
+    drop exp2_num_31124.png (dup-of:MT_Free/Imgs/exp1_num_2610.png)
+    drop exp2_num_332707.png (dup-of:MT_Free/Imgs/exp1_num_332686.png)
+    drop exp2_num_5924.png (dup-of:MT_Free/Imgs/exp2_num_34101.png)
+  6 classes:
+    MT_Free                  1827
+    MT_Blowhole              230
+    MT_Uneven                206
+    MT_Break                 170
+    MT_Crack                 114
+    MT_Fray                  64
+  imbalance = 28.5x (max 1827 / min 64)
+  wrote 5 splits
+==========================================================================
+casting  <- /var/hpc-root/HPC_SHARED_DIR/datasets/casting/casting_data/casting_data
+  note: binary ok_front/def_front; original train/test ignored, re-split uniformly.
+  kept 7284, dropped 64
+    drop cast_ok_0_1001.jpeg (dup-of:train/ok_front/cast_ok_0_1001.jpeg)
+    drop cast_ok_0_1002.jpeg (dup-of:train/ok_front/cast_ok_0_1002.jpeg)
+    drop cast_ok_0_1003.jpeg (dup-of:train/ok_front/cast_ok_0_1003.jpeg)
+    drop cast_ok_0_1019.jpeg (dup-of:train/ok_front/cast_ok_0_1019.jpeg)
+    drop cast_ok_0_1020.jpeg (dup-of:train/ok_front/cast_ok_0_1020.jpeg)
+    drop cast_ok_0_1021.jpeg (dup-of:train/ok_front/cast_ok_0_1021.jpeg)
+    drop cast_ok_0_1022.jpeg (dup-of:train/ok_front/cast_ok_0_1022.jpeg)
+    drop cast_ok_0_1026.jpeg (dup-of:train/ok_front/cast_ok_0_1026.jpeg)
+  2 classes:
+    def_front                4211
+    ok_front                 3073
+  imbalance = 1.4x (max 4211 / min 3073)
+  wrote 5 splits

@@ -1,0 +1,99 @@
+{
+ "type": "final",
+ "run_id": "convnext_tiny_seed2_n4_res224_finetune_lr0.0003",
+ "best_val_acc": 98.05555555555556,
+ "best_epoch": 28,
+ "test_acc": 97.5,
+ "test_loss": 0.06827323810300893,
+ "per_class_acc": {
+  "crazing": 100.0,
+  "inclusion": 98.33333333333333,
+  "patches": 100.0,
+  "pitted_surface": 90.0,
+  "rolled_in_scale": 100.0,
+  "scratches": 96.66666666666667
+ },
+ "confusion": [
+  [
+   60,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   59,
+   0,
+   0,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   60,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   1,
+   1,
+   54,
+   3,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   60,
+   0
+  ],
+  [
+   0,
+   2,
+   0,
+   0,
+   0,
+   58
+  ]
+ ],
+ "total_sec": 129.7,
+ "model": "convnext_tiny",
+ "family": "modern_cnn",
+ "seed": 2,
+ "img_size": 224,
+ "epochs": 50,
+ "bs": 32,
+ "lr": 0.0003,
+ "wd": 0.0005,
+ "train_frac": 1.0,
+ "per_class": 4,
+ "mode": "finetune",
+ "pretrained": true,
+ "split_file": "/var/hpc-root/xiangxu/work/splits/neu_cls_seed2.json",
+ "n_params": 27824742,
+ "device": "Tesla T4",
+ "amp_dtype": "fp16",
+ "torch": "2.5.1+cu121",
+ "cuda": "12.1",
+ "python": "3.11.15",
+ "git": "no-git",
+ "n_train": 24,
+ "n_val": 360,
+ "n_test": 360,
+ "classes": [
+  "crazing",
+  "inclusion",
+  "patches",
+  "pitted_surface",
+  "rolled_in_scale",
+  "scratches"
+ ],
+ "ts": "2026-09-17 00:39:48"
+}

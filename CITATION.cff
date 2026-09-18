@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use these results, please cite the paper and this artifact."
+title: "Class-Level Data Efficiency in Industrial Defect Classification: results, splits, and analysis pipeline"
+abstract: >-
+  Complete experimental artifact for a study of class-level data efficiency in
+  industrial surface-defect classification. Contains 6,430 completed training
+  runs (2,700 main benchmark + 3,730 pilot sweep) over four public industrial
+  defect datasets, eleven torchvision classifiers, and per-class annotation-budget
+  sweeps with five seeds. Each run records its per-class accuracy and full
+  confusion matrix. Also includes the frozen data splits, the dataset audit
+  records, the aggregated analysis tables, and the code that regenerates every
+  table and figure in the manuscript.
+type: software
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+repository-code: "https://github.com/Xu-913/industrial-defect-data-efficiency"
+keywords:
+  - industrial defect classification
+  - data efficiency
+  - annotation budget
+  - class imbalance
+  - learning curves
+  - surface defect detection
+  - reproducibility
+authors:
+  - family-names: Xu
+    given-names: Xiang
+    email: xu913913@gmail.com
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+    orcid: ""
+  - family-names: Nie
+    given-names: Mincan
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Liu
+    given-names: Yiwen
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Li
+    given-names: Xinxin
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Sun
+    given-names: Yihui
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Hu
+    given-names: Wei
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Gong
+    given-names: Zhi
+    affiliation: "Hunan University, Changsha, China"
+contact:
+  - family-names: Xu
+    given-names: Xiang
+    email: xu913913@gmail.com

@@ -1,0 +1,99 @@
+{
+ "type": "final",
+ "run_id": "shufflenet_v2_x1_0_seed2_n2_res320_finetune_lr0.0003",
+ "best_val_acc": 71.66666666666667,
+ "best_epoch": 20,
+ "test_acc": 68.88888888888889,
+ "test_loss": 1.7326424307293362,
+ "per_class_acc": {
+  "crazing": 86.66666666666667,
+  "inclusion": 16.666666666666668,
+  "patches": 98.33333333333333,
+  "pitted_surface": 61.666666666666664,
+  "rolled_in_scale": 86.66666666666667,
+  "scratches": 63.333333333333336
+ },
+ "confusion": [
+  [
+   52,
+   0,
+   8,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   10,
+   40,
+   5,
+   0,
+   4
+  ],
+  [
+   1,
+   0,
+   59,
+   0,
+   0,
+   0
+  ],
+  [
+   5,
+   0,
+   4,
+   37,
+   0,
+   14
+  ],
+  [
+   0,
+   0,
+   8,
+   0,
+   52,
+   0
+  ],
+  [
+   0,
+   3,
+   19,
+   0,
+   0,
+   38
+  ]
+ ],
+ "total_sec": 24.2,
+ "model": "shufflenet_v2_x1_0",
+ "family": "lightweight",
+ "seed": 2,
+ "img_size": 320,
+ "epochs": 20,
+ "bs": 32,
+ "lr": 0.0003,
+ "wd": 0.0005,
+ "train_frac": 1.0,
+ "per_class": 2,
+ "mode": "finetune",
+ "pretrained": true,
+ "split_file": "/var/hpc-root/xiangxu/work/splits/neu_cls_seed2.json",
+ "n_params": 1259754,
+ "device": "Tesla T4",
+ "amp_dtype": "fp16",
+ "torch": "2.5.1+cu121",
+ "cuda": "12.1",
+ "python": "3.11.15",
+ "git": "no-git",
+ "n_train": 12,
+ "n_val": 360,
+ "n_test": 360,
+ "classes": [
+  "crazing",
+  "inclusion",
+  "patches",
+  "pitted_surface",
+  "rolled_in_scale",
+  "scratches"
+ ],
+ "ts": "2026-09-17 05:15:46"
+}

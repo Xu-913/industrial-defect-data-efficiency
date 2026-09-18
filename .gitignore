@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Model checkpoints - never commit (242 GB in the original run)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Raw image datasets - never commit, see docs/DATASETS.md
+data/images/
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local scratch
+/tmp/
+*.log
+!data/build_report.txt

@@ -1,0 +1,12 @@
+# Core scientific stack.
+# Versions are the ones actually used for the main benchmark (see each result
+# JSON's "torch" and "python" fields for per-run provenance).
+torch>=2.4,<2.6
+torchvision>=0.19,<0.21
+numpy>=1.24
+Pillow>=10.0
+
+# Analysis and figures
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.7

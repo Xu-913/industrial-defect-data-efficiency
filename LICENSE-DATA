@@ -1,0 +1,45 @@
+# Data and results licence
+
+The experimental results, derived tables, figures, and manuscript source in this
+repository are licensed under the **Creative Commons Attribution 4.0 International
+(CC BY 4.0)** licence.
+
+Copyright (c) 2026 Xiang Xu, Mincan Nie, Yiwen Liu, Xinxin Li, Yihui Sun,
+Wei Hu, Zhi Gong
+
+You are free to:
+
+- **Share** - copy and redistribute the material in any medium or format
+- **Adapt** - remix, transform, and build upon the material for any purpose,
+  even commercially
+
+Under the following terms:
+
+- **Attribution** - You must give appropriate credit, provide a link to the
+  licence, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your use.
+
+- **No additional restrictions** - You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the licence permits.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+## Scope and exclusions
+
+This licence covers:
+
+- `data/` - all result JSON/JSONL/CSV files, splits, audit records, and the
+  image manifest
+- `figures/` - all figure files
+
+This licence does **NOT** cover, and this repository does **not** redistribute:
+
+- The four source image datasets. They remain under their original licences.
+  See `docs/DATASETS.md` for provenance and licence of each.
+- Any pretrained model weights downloaded from torchvision. Those are subject to
+  their own upstream licences.
+
+Note that the **casting** dataset is licensed **CC BY-NC-ND 4.0** by its original
+author, which prohibits commercial use and redistribution of modified copies. We
+therefore publish only the manifest (file paths and labels) for it, never the
+images themselves.

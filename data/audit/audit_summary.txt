@@ -1,0 +1,106 @@
+Dataset audit summary (English rendering)
+=========================================
+Source: data/audit/audit_report.json, produced by code/audit_datasets.py.
+The original audit output is retained verbatim in audit_summary.txt (Chinese).
+This file is an English rendering of the same numbers. No value was altered.
+
+Audit covers five directories: the four datasets used in the paper, plus
+bsdata (considered and excluded) and neu_surface (a duplicate of NEU-CLS,
+see the note at the end).
+
+Sizes are written as WIDTHxHEIGHT x COUNT.
+
+----------------------------------------------------------------------
+bsdata  (/var/hpc-root/HPC_SHARED_DIR/datasets/bsdata)   [EXCLUDED]
+  Total images 1107   Class buckets 3   Labels 3
+  Corrupt 0   Duplicate groups 1 (1 redundant image)
+  Sizes: 1130x460 x856, 1540x645 x180, 2724x850 x15, 2707x936 x1,
+         2695x941 x1, 2679x952 x1
+  Channels: {'RGB': 1105, 'RGBA': 2}
+  Imbalance: max 1104 / min 1 = 1104.0x
+  Per-label counts:
+    data                       1104
+    demo                       2
+    BSD                        1
+  Note: not used in the paper. The label structure is an artifact of the
+  directory layout rather than a genuine class structure.
+
+----------------------------------------------------------------------
+casting  (/var/hpc-root/HPC_SHARED_DIR/datasets/casting)
+  Total images 8648   Class buckets 6   Labels 2
+  Corrupt 0   Duplicate groups 64 (64 redundant images)
+  Sizes: 300x300 x7348, 512x512 x1300
+  Channels: {'RGB': 8648}
+  Imbalance: max 4992 / min 3656 = 1.4x
+  Per-label counts:
+    def_front                  4992
+    ok_front                   3656
+  Note: 8648 = 7348 (casting_data) + 1300 (casting_512x512). The 512x512
+  tree is a resampled copy of the same product distribution, not additional
+  samples, and is excluded in full. After removing 64 duplicates from the
+  casting_data tree, 7284 images are used.
+
+----------------------------------------------------------------------
+gc10det  (/var/hpc-root/HPC_SHARED_DIR/datasets/gc10det)
+  Total images 2312   Class buckets 10   Labels 10
+  Corrupt 0   Duplicate groups 0 (0 redundant images)
+  Sizes: 2048x1000 x2312
+  Channels: {'L': 2312}
+  Imbalance: max 651 / min 31 = 21.0x
+  Per-label counts:
+    6                          651
+    4                          289
+    2                          273
+    3                          226
+    1                          219
+    7                          216
+    5                          204
+    10                         150
+    9                          53
+    8                          31
+
+----------------------------------------------------------------------
+magnetic_tile  (/var/hpc-root/HPC_SHARED_DIR/datasets/magnetic_tile)
+  Total images 2690   Class buckets 7   Labels 7
+  Corrupt 0   Duplicate groups 65 (77 redundant images)
+  Sizes: 265x375 x12, 123x286 x10, 122x285 x8, 219x272 x6, 121x283 x6,
+         596x260 x6
+  Channels: {'RGB': 1, 'RGBA': 1, 'L': 2688}
+  Imbalance: max 1904 / min 2 = 952.0x
+  Per-label counts:
+    MT_Free                    1904
+    MT_Blowhole                230
+    MT_Uneven                  206
+    MT_Break                   170
+    MT_Crack                   114
+    MT_Fray                    64
+    Magnetic-Tile-Defect       2
+  Note: the raw audit reports 7 labels; the paper uses 6. The seventh,
+  Magnetic-Tile-Defect, holds only 2 images, below the construction
+  threshold MIN_CLASS = 20, and is removed wholesale. This accounts for
+  exactly those 2 images: 2690 - 77 - 2 = 2611.
+
+----------------------------------------------------------------------
+neu_surface  (/var/hpc-root/HPC_SHARED_DIR/datasets/neu_surface)
+  Total images 1800   Class buckets 12   Labels 6
+  Corrupt 0   Duplicate groups 1 (1 redundant image)
+  Sizes: 200x200 x1800
+  Channels: {'RGB': 1800}
+  Imbalance: max 300 / min 300 = 1.0x
+  Per-label counts:
+    crazing                    300
+    inclusion                  300
+    patches                    300
+    pitted_surface             300
+    rolled-in_scale            300
+    scratches                  300
+  Note: the 12 class buckets are 6 classes x {train, validation}
+  directories. After deduplication of 1 image, 1799 images remain and are
+  used under the key neu_cls.
+
+======================================================================
+CRITICAL NOTE
+neu_surface and the NEU-CLS classification set are THE SAME 1800 images.
+They must not be used as two independent datasets. This repository ships
+exactly one copy, under the key neu_cls.
+======================================================================

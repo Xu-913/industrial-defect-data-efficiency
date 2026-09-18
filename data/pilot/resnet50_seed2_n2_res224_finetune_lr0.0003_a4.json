@@ -1,0 +1,99 @@
+{
+ "type": "final",
+ "run_id": "resnet50_seed2_n2_res224_finetune_lr0.0003_a4",
+ "best_val_acc": 89.44444444444444,
+ "best_epoch": 16,
+ "test_acc": 88.05555555555556,
+ "test_loss": 0.7956006738874647,
+ "per_class_acc": {
+  "crazing": 81.66666666666667,
+  "inclusion": 80.0,
+  "patches": 100.0,
+  "pitted_surface": 95.0,
+  "rolled_in_scale": 100.0,
+  "scratches": 71.66666666666667
+ },
+ "confusion": [
+  [
+   49,
+   0,
+   11,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   48,
+   0,
+   6,
+   0,
+   6
+  ],
+  [
+   0,
+   0,
+   60,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   2,
+   57,
+   0,
+   1
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   60,
+   0
+  ],
+  [
+   0,
+   15,
+   0,
+   0,
+   2,
+   43
+  ]
+ ],
+ "total_sec": 47.8,
+ "model": "resnet50",
+ "family": "cnn_classic",
+ "seed": 2,
+ "img_size": 224,
+ "epochs": 50,
+ "bs": 32,
+ "lr": 0.0003,
+ "wd": 0.0005,
+ "train_frac": 1.0,
+ "per_class": 2,
+ "mode": "finetune",
+ "pretrained": true,
+ "split_file": "/var/hpc-root/xiangxu/work/splits/neu_cls_seed2.json",
+ "n_params": 23520326,
+ "device": "NVIDIA RTX A4000",
+ "amp_dtype": "bf16",
+ "torch": "2.4.1+cu121",
+ "cuda": "12.1",
+ "python": "3.8.13",
+ "git": "no-git",
+ "n_train": 12,
+ "n_val": 360,
+ "n_test": 360,
+ "classes": [
+  "crazing",
+  "inclusion",
+  "patches",
+  "pitted_surface",
+  "rolled_in_scale",
+  "scratches"
+ ],
+ "ts": "2026-09-17 13:43:52"
+}
