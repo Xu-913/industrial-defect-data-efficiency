@@ -33,19 +33,28 @@ authors:
     affiliation: "Hunan University of Information Technology, Changsha, China"
   - family-names: Liu
     given-names: Yiwen
-    affiliation: "Hunan University of Information Technology, Changsha, China"
+    affiliation: "Hunan University, Changsha, China"
   - family-names: Li
-    given-names: Xinxin
+    given-names: Xianxin
     affiliation: "Hunan University of Information Technology, Changsha, China"
   - family-names: Sun
     given-names: Yihui
     affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Zhan
+    given-names: Zhu
+    affiliation: "Funsine Technology Co., Ltd., Changsha, China"
   - family-names: Hu
     given-names: Wei
     affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Liu
+    given-names: Jun
+    affiliation: "Funsine Technology Co., Ltd., Changsha, China"
   - family-names: Gong
     given-names: Zhi
-    affiliation: "Hunan University, Changsha, China"
+    affiliation: "Hunan University of Information Technology, Changsha, China"
+  - family-names: Su
+    given-names: Haibin
+    affiliation: "Funsine Technology Co., Ltd., Changsha, China"
 contact:
   - family-names: Xu
     given-names: Xiang
